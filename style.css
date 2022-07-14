@@ -107,6 +107,9 @@
 .Main-content{
     margin-left: 200px;
 }
+.card-body{
+    width: 500px;
+}
 }
 @media screen and (min-width: 1200px) {
     .Sidebar{
