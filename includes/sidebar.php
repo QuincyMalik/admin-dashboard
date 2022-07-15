@@ -1,6 +1,12 @@
 <nav>
 	  <ul>
 	  <li>
+			<a href="contact-us.php">
+				<span> <i class="fa fa-envelope"></i></span>
+				<span>Messages</span>
+			</a>
+		</li>
+	  <li>
 			<a href="index.php">
 				<span> <i class="fa fa-home"></i></span>
 				<span>Dashboard</span>
