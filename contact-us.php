@@ -35,7 +35,8 @@ $sqliquery = mysqli_query($conn, "SELECT * FROM contactus");
 						<thead>
 							<tr>
 								<th>NO.</th>
-								<th>Fullname</th>
+								<th>Firstname</th>
+								<th>lastname</th>
 								<th>Phone Number</th>
 								<th>Email</th>
                                 <th>Message</th>
@@ -46,6 +47,8 @@ $sqliquery = mysqli_query($conn, "SELECT * FROM contactus");
 							<?php while($fetchRecords =mysqli_fetch_array($sqliquery)){ ?>
 								<tr>
 									<td><?php echo $fetchRecords['no'] ?></td>
+									<td><?php echo $fetchRecords['firstname'] ?></td>
+									<td><?php echo $fetchRecords['lastname'] ?></td>
 									<td><?php echo $fetchRecords['phonenumber'] ?></td>
 									<td><?php echo $fetchRecords['email'] ?></td>
 									<td><?php echo $fetchRecords['message'] ?></td>
