@@ -4,6 +4,10 @@ require_once ('logics/dbconnection.php');
 
 $sqliquery = mysqli_query($conn, "SELECT * FROM contactus");
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,6 +58,17 @@ $sqliquery = mysqli_query($conn, "SELECT * FROM contactus");
 									<td><?php echo $fetchRecords['message'] ?></td>
                                     <td><?php echo $fetchRecords['createdat'] ?></td>
 									<td>
+									<a href="edit-contactus.php?id=<?php echo $fetchRecords['no'] ?>" class="btn btn-primary btn-sm">
+											<i class="fa fa-edit"></i>
+										</a>
+										<a href="view-contactus.php?id=<?php echo $fetchRecords['no'] ?>" class="btn btn-info btn-sm">
+											<i class="fa fa-eye"></i>
+										</a>
+										<a href="delete-contactus.php?id=<?php echo $fetchRecords['no'] ?>" class="btn btn-danger btn-sm">
+											<i class="fa fa-trash"></i>
+										</a>
+										
+									</td>	
 								</tr>
 							<?php }?>
 						</tbody>

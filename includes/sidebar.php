@@ -1,12 +1,6 @@
 <nav>
 	  <ul>
 	  <li>
-			<a href="contact-us.php">
-				<span> <i class="fa fa-envelope"></i></span>
-				<span>Messages</span>
-			</a>
-		</li>
-	  <li>
 			<a href="index.php">
 				<span> <i class="fa fa-home"></i></span>
 				<span>Dashboard</span>
@@ -28,6 +22,18 @@
 			<a href="">
 				<span> <i class="fa fa-graduation-cap"></i></span>
 				<span>Campus</span>
+			</a>
+		</li>
+		<li>
+			<a href="contact-us.php">
+				<span> <i class="fa fa-envelope"></i></span>
+				<span>Messages</span>
+			</a>
+		</li>
+		<li>
+			<a href="contact-us.php">
+				<span> <i class="fa fa-envelope"></i></span>
+				<span>Messages</span>
 			</a>
 		</li>
 	  </ul>

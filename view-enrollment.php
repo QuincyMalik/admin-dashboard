@@ -50,19 +50,19 @@
                 <div class="card-header bg-dark text-white text-center ">
                     <h4 class="card-title">Personal information</h4>  
                 </div> 
-                <div class="card-body">
-                    <ul class="list-group">
-                        <li class="list-group-item">fullname: <span class="float-right badge badge-primary"><?php echo $fullname ?></span> </li>
-                        <li class="list-group-item">email:  <span class="float-right badge badge-primary"><?php echo $email ?></span> </li>
-                        <li class="list-group-item">phonenumber:  <span class="float-right badge badge-primary"float-right><?php echo $phonenumber ?></span> </li>
-                    </ul>    
-                </div>   
-            </div>
+                <div class="card">
+                    <div class="list-group">
+                        <li class="list-group-item">Full Name: <span class="float-right badge badge-primary"><?php echo $fullname ?></span> </li>
+                        <li class="list-group-item">Phone number:  <span class="float-right badge badge-primary"><?php echo $phonenumber ?></span> </li>
+                        <li class="list-group-item">Email:  <span class="float-right badge badge-primary"float-right><?php echo $email ?></span> </li>
+                </div>    
+            </div>   
+        </div>
             <div class="col-lg-6">
                 <div class="card-header bg-dark text-white text-center ">
                     <h4 class="card-title">Other information</h4>  
                 </div> 
-                <div class="card-body">
+                <div class="card">
                     <ul class="list-group">
                         <li class="list-group-item">Gender: <span class="float-right badge badge-primary"><?php echo $gender ?></span> </li>
                         <li class="list-group-item">Course:  <span class="float-right badge badge-primary"><?php echo $course ?></span> </li>
