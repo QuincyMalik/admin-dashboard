@@ -1,5 +1,5 @@
 <nav>
-	  <ul>
+	<ul>
 	  <li>
 			<a href="index.php">
 				<span> <i class="fa fa-home"></i></span>
@@ -31,10 +31,10 @@
 			</a>
 		</li>
 		<li>
-			<a href="contact-us.php">
+			<a href="subscribe.php">
 				<span> <i class="fa fa-envelope"></i></span>
-				<span>Messages</span>
+				<span>Subscription</span>
 			</a>
 		</li>
-	  </ul>
+	</ul>
 </nav>
