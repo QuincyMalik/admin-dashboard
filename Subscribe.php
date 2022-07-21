@@ -33,6 +33,9 @@ $sqliquery = mysqli_query($conn, "SELECT * FROM subscribers");
                <div class="col-lg-12">
             		<div class="card-header bg-dark text-white text-center">
                  		<span>Subscribers </span>
+                         <span> <a href="add-subscribers.php"> 
+                        <i class="fa fa-plus btn btn-primary">Add subscribers</i> 
+                    </a></span>
                    	</div>
 				<div class="card-body">
 					<table class="table table-striped table-hover table responsive" style="font-size: 12px;">	
@@ -49,7 +52,18 @@ $sqliquery = mysqli_query($conn, "SELECT * FROM subscribers");
 									<td><?php echo $fetchRecords['no'] ?></td>
 									<td><?php echo $fetchRecords['email'] ?></td>
                                     <td><?php echo $fetchRecords['created_at'] ?></td>
-										
+								
+                                    <td>
+										<a href="edit-enrollment.php?id=<?php echo $fetchRecords['no'] ?>" class="btn btn-primary btn-sm">
+											<i class="fa fa-edit"></i>
+										</a>
+										<a href="view-enrollment.php?id=<?php echo $fetchRecords['no'] ?>" class="btn btn-info btn-sm">
+											<i class="fa fa-eye"></i>
+										</a>
+										<a href="delete-enrollment.php?id=<?php echo $fetchRecords['no'] ?>" class="btn btn-danger btn-sm">
+											<i class="fa fa-trash"></i>
+										</a>
+									</td>	
 								</tr>
 							<?php }?>
 						</tbody>
